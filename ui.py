@@ -5,13 +5,13 @@ st.set_page_config(page_title="Langgraph Agent",layout="centered", page_icon="ic
 API_URL="http://127.0.0.1:8000/chat"
 
 MODEL_NAMES= [
-    "llama-guard-3-8b",
+    
     "gemma2-9b-it",
     "llama3-8b-8192",
     "llama3-70b-8192"
 ]
 st.title("Let's Chat")
-st.write("Interact with the Langgraph agent using this interface")
+st.write("Where Curiosity Meets AI")
 
 given_system_prompt=st.text_area("Define your AI Agent:",height=100,placeholder="Say act as researcher/analyst...")
 selected_model=st.selectbox("Select Model",MODEL_NAMES)
